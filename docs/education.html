@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education & Skills</title>
+    <style>
+                /* Add a black background color to the top navigation */
+.topnav {
+background-color: rgb(216, 151, 39);
+overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: right;
+color: #f2f2f6;
+text-align: center;
+padding: 12px 16px;
+text-decoration: none;
+font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color:orange;
+color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+
+color: white;
+}
+        body {
+            font-family: Georgia, sans-serif;
+    background-color:black;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.education-skills {
+    background: url('image/11.avif');
+    color: #fff;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education, .skills {
+    flex: 1 1 45%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.education-item, .skill-item {
+    margin-bottom: 15px;
+}
+
+.education-item h3 {
+    margin: 0 0 5px;
+    color: #ffd700;
+}
+
+.education-item p {
+    margin: 0;
+    color: #fff;
+}
+
+.skill-item {
+    background: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .education, .skills {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+    <div class="topnav">
+        
+        <a href="education.html">| Education |</a>
+        <a href="contact.html">| Contact Us |</a>
+        <a href="about me.html">| About Me |</a>
+        <a class="active" href="home.html">| Home |</a>
+      </div> 
+    <section class="education-skills">
+        <h1>Education & Skills</h1>
+        <div class="container">
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Master of Science in Computer Science</h3>
+                    <p>University of Lahore, 2010 - 2023</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of B.Com</h3>
+                    <p>Institute of Lahore College Of Commerece & Computer Science, 2008 - 2010</p>
+                </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">SQL</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
